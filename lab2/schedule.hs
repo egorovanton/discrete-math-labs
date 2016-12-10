@@ -43,3 +43,4 @@ solve list n = helper (S.fromList [1..n]) 0 list
             case lookupLE time set of
                 Nothing  -> helper (deleteMax set) (acc + fromIntegral fine) rest
                 Just tmp -> helper (delete tmp set) acc rest 
+
